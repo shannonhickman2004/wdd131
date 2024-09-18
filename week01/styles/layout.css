@@ -25,10 +25,25 @@ nav ul li {
     margin: 0 15px;
 }
 
+.content-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    height: 1000px;
+}
+
 main {
     padding: 20px;
     background-color: #e9ecef;
 }
+
+aside {
+    padding: 20px;
+    background-color: #0a0af8;
+}
+
 
 footer {
     background-color: hwb(0 3% 47%);
