@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3f8d2a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+footer {
+    background-color: hwb(0 3% 47%);
+    padding: 10px;
+    text-align: center;
+}
