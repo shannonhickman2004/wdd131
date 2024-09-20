@@ -25,6 +25,18 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #3f8d2a;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2c6f1d;
+}
+
 .content-area {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -37,9 +49,14 @@ nav ul li {
 main {
     padding: 20px;
     background-color: #e9ecef;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; /* Add space between the cards */
+    max-width: 1200px; /* Limit the width */
+    margin: 0 auto; /* Center the element */
 }
 
-aside {
+card {
     padding: 20px;
     background-color: #0a0af8;
 }

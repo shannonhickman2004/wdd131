@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Shannon Hickman, About me page with interests and social media links">
+    <meta name="author" content="Shannon Hickman">
+    <title>WDD 131 - Dynamic Web Fundamentals - Shannon Hickman</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Shannon Hickman</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/shannon-hickman-06134b27b/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng#title_number1"
+                        target="_blank">Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <main class="content-area">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    
+                    
+                    <p>Hello! My name is Shannon Hickman. My major is Software Development. My picture is my husband and
+                        I, my inspiration for choosing my degree. He has been a programmer for over 30 years, and I hope
+                        to help with his start-up company. I have 7 daughters and 4 grandkids. My 4 youngest girls were
+                        an unexpected blessing, first belonging to my brother. They came to me from Cambodia and are
+                        precious to us. It's been an adventure to parent for 32 years, and my home is filled with family
+                        that I love! My oldest is 32, and my youngest is 8, followed by my oldest granddaughter, who is
+                        7, followed by 3 more littles. It's like a three-ring circus when they are all home, and I love
+                        every minute! My hobbies and interests include time with my family. I love to camp, watch fall
+                        football games, do lots of cooking and baking, and in my few quiet moments, I love to read.</p>
+                    <img src="images/image1.jpg" alt="Shannon Hickman">
+                </div>
+                <hr>
+
+
+                <div class="country">
+                    <img src="images/utah.jpg" alt="Utah flag">
+                    <p>Utah is a state located in the western United States, known for its diverse geography that includes mountains, high plateaus, and deserts. It covers an area of approximately 84,900 square miles, making it the 11th largest state in the U.S.. The capital city is Salt Lake City, situated in the north-central part of the state.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/courses/development/web-development/" target="_blank">Udemy</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Shannon Hickman <img src="images/utes.jpeg" alt="utes"> Herriman, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
+    </script>
+</body>
+
+</html>
