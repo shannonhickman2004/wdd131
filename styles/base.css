@@ -112,11 +112,6 @@ hr {
     height: auto;
 }
 
-.country p {
-    flex: 1;
-}
-
-/* Web Dev Resources Section */
 .card h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -144,21 +139,6 @@ hr {
 
 .card ul li a:hover {
     color: #8B0000;
-}
-
-/* Aside content styling */
-aside {
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-aside h2 {
-    font-size: 1.5rem;
-    color: #333333;
-    font-weight: 700;
-    margin-bottom: 15px;
 }
 
 footer {

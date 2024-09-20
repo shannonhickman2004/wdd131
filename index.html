@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals - Shannon Hickman, About me page with interests and social media links">
     <meta name="author" content="Shannon Hickman">
-    <title>WDD 131 - Dynamic Web Fundamentals - Shannon Hickman</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Shannon Hickman</title>
+    <script defer src="scripts/getdates.js"></script>
+
 </head>
 
 <body>
@@ -31,8 +34,8 @@
             <section class="card">
                 <h2>About Me</h2>
                 <div class="about-me">
-                    
-                    
+
+
                     <p>Hello! My name is Shannon Hickman. My major is Software Development. My picture is my husband and
                         I, my inspiration for choosing my degree. He has been a programmer for over 30 years, and I hope
                         to help with his start-up company. I have 7 daughters and 4 grandkids. My 4 youngest girls were
@@ -49,7 +52,10 @@
 
                 <div class="country">
                     <img src="images/utah.jpg" alt="Utah flag">
-                    <p>Utah is a state located in the western United States, known for its diverse geography that includes mountains, high plateaus, and deserts. It covers an area of approximately 84,900 square miles, making it the 11th largest state in the U.S.. The capital city is Salt Lake City, situated in the north-central part of the state.</p>
+                    <p>Utah is a state located in the western United States, known for its diverse geography that
+                        includes mountains, high plateaus, and deserts. It covers an area of approximately 84,900 square
+                        miles, making it the 11th largest state in the U.S.. The capital city is Salt Lake City,
+                        situated in the north-central part of the state.</p>
                 </div>
             </section>
 
@@ -66,14 +72,12 @@
     </div>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Shannon Hickman <img src="images/utes.jpeg" alt="utes"> Herriman, Utah</p>
+        <p id="symbol-date-name">
+            &copy;<span id="currentyear"></span> Shannon Hickman - Herriman, UT
+        </p>
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
-    </script>
 </body>
 
 </html>
