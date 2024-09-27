@@ -1,6 +1,6 @@
 // hamburger button
-const hamButton = document.querySelector('#menu'); 
-const navigation = document.querySelector('.navigation'); 
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
 // what happens when you blick the button
 hamButton.addEventListener('click', () => { // Fill in the event type
