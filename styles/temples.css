@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+header {
+    background-color: #8B0000;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: left;
+    font-family: roboto, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    margin: .5rem;
+}
+
+nav {
+    max-width: 700px;
+    margin-left: auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    font-size: 1.8rem;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #8B0000;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 1000;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* this is what happens when the button is clicked - the open class is toggled or added/removed */
+
+.open {
+    display: flex;
+}
+
+.active::before {
+    content: "❎";
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+}
+
+main {
+    max-width: 600px; 
+    margin: auto; 
+    padding: 20px; 
+    display: flex; /* this is so it will stack vertically */
+    flex-direction: column; /* stacks them in one column */
+}
+
+/* i could take out, it's the style for each figure */
+figure {
+    background-color: white; /* background for images */
+    border: 1px solid #ddd; /* this is a border around images */
+    border-radius: 5px; /* rounds the corners */
+    overflow: hidden; /* hides any overflow */
+    text-align: center; /* centers the caption */
+}
+
+img {
+    width: 100%; /* this makes them fill the width */
+    height: auto;
+}
+
+footer {
+    background-color: #8B0000;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+footer img {
+    height: 15px;
+    background-color: #8B0000;
+}

@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+    header{
+        padding: 20px;
+        display: flex;
+    }
+
+	h1 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	
+	h2 {
+        grid-column: span 3;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-left: auto;
+        top: 18px; /* this helped so the navigation goes under the x */
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 auto;
+        padding: 1rem;
+        text-align: center;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 1200px; /* limits how wide for desktop */
+        display: grid; /* grid for images */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px; /* space between images */
+        margin: auto; /* centers the content */
+        padding: 20px; /* padding around images */
+    }
+
+    /* Style for the images */
+    figure {
+        background-color: white; /* Background for each image */
+        border: 1px solid #ddd; /* Optional border for the images */
+        border-radius: 5px; /* Rounded corners */
+        overflow: hidden; /* Hide overflow */
+        text-align: center; /* Center caption text */
+    }
+
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
