@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Shannon Hickman, Maui Hawaii, with weather and demographics">
+    <meta name="author" content="Shannon Hickman">
+    <title>Place</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/place.css" media="screen">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src='scripts/windchill.js'></script>
+    <script defer src='scripts/getdates.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>Moab, Utah</h1>
+
+    </header>
+    <aside></aside>
+    <main>
+        <section class="arches">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 750px)">
+                <img src="images/hero-small.webp" alt="Moab, Utah birth place" width="320" height="480">
+            </picture>
+        </section>
+
+        <section class="card content data-container">
+            <h2>Data</h2>
+            <div class="data">
+                <span class="label">Area:</span>
+                <span class="value">3.6 mi²</span>
+                <span class="label">Population:</span>
+                <span class="value">5,321</span>
+                <span class="label">Elevation:</span>
+                <span class="value">4,026</span>
+                <span class="label">Popular Destinations:</span>
+                <span class="value">Arches National Park, Canyonlands, Dead Horse Point</span>
+                <span class="label">Landscape</span>
+                <span class="value">Red Rock Formations, Mesas, Buttes</span>
+                <span class="label">Activities:</span>
+                <span class="value">4 Wheeling, River Rafting, Exploring</span>
+
+
+            </div>
+        </section>
+
+        <section class="card content weather-container">
+            <h2>Weather</h2>
+            <svg id="weatherIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="150px" height="150px">
+                <path
+                    d="M32 12a8 8 0 11-16 0 8 8 0 0116 0zm16 20h-3a9 9 0 00-16-4.898A7 7 0 1016 42h32a6 6 0 100-12zM19 54a1 1 0 010-2h26a1 1 0 010 2H19z" />
+            </svg>
+
+
+            <div class="weather">
+                <span class="label">Temperature:</span>
+                <span class="value">10°C</span>
+                <span class="label">Conditions:</span>
+                <span class="value">Parthly Cloudy/Rain</span>
+                <span class="label">Wind Speed</span>
+                <span class="value">5 km/h</span>
+                <span class="label">Wind Chill</span>
+                <span class="value" id="windChill">N/A</span>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="symbol-date-name">
+            &copy;<span id="currentyear"></span> Shannon Hickman - Herriman, UT
+        </p>
+        <p>Moab, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
+
+</html>
