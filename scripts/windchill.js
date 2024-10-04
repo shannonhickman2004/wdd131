@@ -7,11 +7,11 @@ function windChill(temp, speedMs) {
 }
 
 
-let tempC = 10; 
-let speedKmh = 5; 
+let tempC = 10;
+let speedKmh = 5;
 
 
-let speedMs = speedKmh / 3.6; 
+let speedMs = speedKmh / 3.6;
 
 
 if (tempC <= 10 && speedKmh > 4.8) {
