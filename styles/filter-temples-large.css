@@ -68,3 +68,25 @@
         height: auto;
     }
 }
+
+#temple-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 20px;
+}
+
+.temple-card {
+    width: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+}
