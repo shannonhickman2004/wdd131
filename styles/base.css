@@ -120,10 +120,12 @@ hr {
 .card ul {
     padding: 0;
     margin-left: 20px;
+    text-align: center;
 }
 
 .card ul li {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .card ul li a {

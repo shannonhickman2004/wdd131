@@ -2,25 +2,31 @@
     body {
         font-size: 1.2rem;
     }
+
     header {
         padding: 20px;
         display: flex;
+        justify-content: space-between;
+        /* Space between elements in the header */
+        align-items: center;
     }
 
     h1 {
         font-size: 2.5rem;
         text-align: center;
+        margin-bottom: 20px;
+        /* Add spacing below the title */
     }
 
     h2 {
-        grid-column: span 3;
         font-size: 2rem;
         text-align: center;
+        margin-bottom: 20px;
+        /* Add spacing below the subtitle */
     }
 
     #menu {
         display: none;
-        /* hide hamburger button */
     }
 
     .navigation {
@@ -29,42 +35,75 @@
         list-style: none;
         margin-left: auto;
         top: 18px;
-        /* this helped so the navigation goes under the x */
     }
 
     .navigation a {
         display: block;
-        flex: 1 1 auto;
         padding: 1rem;
         text-align: center;
+        margin-right: 10px;
     }
 
-    .stuff {
-        margin: 1rem auto;
+    .navigation a:last-child {
+        margin-right: 0;
     }
-}
 
-@media (min-width: 768px) {
     main {
         max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    #temple-cards-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin: auto; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Cards take up more space */
+        justify-content: center;
+        /* Center the cards */
+        gap: 40px;
+        /* Increase the gap between cards */
         padding: 20px;
-        
     }
 
-    figure {
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow: hidden;
-        text-align: center;
+    .temple-card {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: left;
+        /* Align text left inside the cards */
+        max-width: 400px;
+        /* Set max width for each card */
+        margin: 0 auto;
+        /* Center each card */
+        border-radius: 8px;
     }
 
-    img {
-        width: 100%;
+    .temple-card:hover {
+        transform: scale(1.05);
+    }
+
+    .temple-card img {
+        max-width: 100%;
         height: auto;
+        margin-bottom: 10px;
+    }
+
+    .temple-card h3,
+    .temple-card p {
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Add ellipsis if text overflows */
+    }
+
+    .temple-card h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .temple-card p {
+        margin-bottom: 10px;
+        font-size: 1rem;
     }
 }

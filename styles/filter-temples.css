@@ -56,7 +56,9 @@ nav {
 }
 
 #menu.open::before {
-    content: "❎";
+    content: "✖";
+    color: black;
+    background-color: white;
 }
 
 .navigation {
@@ -88,14 +90,14 @@ nav {
     font-weight: 700;
 }
 
-/* this is what happens when the button is clicked - the open class is toggled or added/removed */
-
 .open {
     display: flex;
 }
 
 .active::before {
-    content: "❎";
+    content: "✖";
+    color: black;
+    background-color: white;
 }
 
 .stuff {
@@ -111,12 +113,9 @@ main {
     margin: auto;
     padding: 20px;
     display: flex;
-    /* this is so it will stack vertically */
     flex-direction: column;
-    /* stacks them in one column */
 }
 
-/* i could take out, it's the style for each figure */
 figure {
     background-color: white;
     border: 1px solid #ddd;
@@ -145,9 +144,10 @@ footer img {
 
 #temple-cards-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    text-align: center;
 }
 
 .temple-card {
@@ -157,7 +157,7 @@ footer img {
     margin: 10px;
     padding: 15px;
     width: 100%;
-    text-align: center;
+    max-width: 400px;
 }
 
 .temple-card img {
@@ -172,3 +172,7 @@ footer img {
     margin-bottom: 10px;
 }
 
+.temple-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
