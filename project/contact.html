@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Blanding's Retreat</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Blanding's Retreat</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>If you have questions or want to learn more about your visit, please reach out to us:</p>
+            <form method="get" action="thanks.html" class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Phone <input type="tel" name="phone" placeholder="123-555-1234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inquiry Details</legend>
+                    <label>Your Message* <textarea name="message" rows="4" required></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Booking Information</legend>
+                    <label>Preferred Check-in Date <input type="date" name="checkin" required></label>
+                    <label>Preferred Check-out Date <input type="date" name="checkout" required></label>
+                </fieldset>
+
+                <input type="submit" value="Send Inquiry">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name - Blanding, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
