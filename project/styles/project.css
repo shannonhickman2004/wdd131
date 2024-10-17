@@ -6,14 +6,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; 
-    color: #333; 
-    line-height: 1.6; 
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #B22222; 
-    color: white; 
+    background-color: #B22222;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,66 +29,70 @@ h1 {
     font-size: 1.5rem;
     border: none;
     background: none;
-    color: white; 
+    color: white;
     cursor: pointer;
-    display: none; /* Hidden by default, will show in mobile view */
+    display: none;
+    /* Hidden by default, will show in mobile view */
 }
 
 .navigation {
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation a {
     padding: 15px;
-    color: white; 
+    color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .navigation a:hover {
-    background-color: #EDC9AF; 
+    background-color: #EDC9AF;
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
     #menu {
-        display: block; 
+        display: block;
     }
 
     .navigation {
-        display: none; /* Hide navigation links in mobile view only hamburger */
-        flex-direction: column; /* Stack items */
+        display: none;
+        /* Hide navigation links in mobile view only hamburger */
+        flex-direction: column;
+        /* Stack items */
         position: absolute;
         right: 0;
-        top: 60px; 
-        background-color: #B22222; 
+        top: 60px;
+        background-color: #B22222;
         width: 100%;
     }
 
     .navigation.open {
-        display: flex; 
+        display: flex;
     }
 }
 
 main {
-    max-width: 1200px; 
-    margin: auto; 
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
 }
 
 .hero {
-    background-image: url('images/cabins.jpg'); /* Set a background image for the hero section */
+    background-image: url('images/cabins.jpg');
+    /* Set a background image for the hero section */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 50px 20px; 
+    padding: 50px 20px;
     text-align: center;
 }
 
 h2 {
     margin: 10px 0;
-    color: #B22222; 
+    color: #B22222;
 }
 
 .gallery {
@@ -97,49 +101,49 @@ h2 {
 }
 
 .gallery-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 15px; 
-    margin-top: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .gallery img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
-    margin-top: 15px; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
 .gallery img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #8B0000; 
-    color: white; 
-    text-align: center; 
-    padding: 15px 0; 
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .contact-form {
     display: flex;
-    flex-direction: column; 
-    gap: 15px; 
+    flex-direction: column;
+    gap: 15px;
 }
 
 fieldset {
-    border: 1px solid #B22222; 
+    border: 1px solid #B22222;
     border-radius: 8px;
     padding: 20px;
 }
 
 legend {
     font-weight: bold;
-    color: #B22222; 
+    color: #B22222;
 }
 
 label {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 input[type="text"],
@@ -147,24 +151,25 @@ input[type="tel"],
 input[type="email"],
 input[type="date"],
 textarea {
-    width: 100%; 
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 input[type="submit"] {
-    background-color: #B22222; 
-    color: white; 
+    background-color: #B22222;
+    color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem; /* Button font size */
-    transition: background-color 0.3s ease; 
+    font-size: 1rem;
+    /* Button font size */
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #EDC9AF; 
+    background-color: #EDC9AF;
 }
-
