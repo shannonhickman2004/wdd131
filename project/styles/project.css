@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #333
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #B22222;
+    background-color: #b65f2a;
     color: white;
     display: flex;
     align-items: center;
@@ -65,7 +66,7 @@ h1 {
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: #B22222;
+        background-color: #b65f2a;
         width: 100%;
     }
 
@@ -92,7 +93,7 @@ main {
 
 h2 {
     margin: 10px 0;
-    color: #B22222;
+    color: #b65f2a;
 }
 
 .gallery {
@@ -119,7 +120,7 @@ h2 {
 }
 
 footer {
-    background-color: #8B0000;
+    background-color: #b65f2a;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -132,14 +133,14 @@ footer {
 }
 
 fieldset {
-    border: 1px solid #B22222;
+    border: 1px solid #b65f2a;
     border-radius: 8px;
     padding: 20px;
 }
 
 legend {
     font-weight: bold;
-    color: #B22222;
+    color: #b65f2a;
 }
 
 label {
@@ -159,7 +160,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #B22222;
+    background-color: #b65f2a;
     color: white;
     padding: 10px;
     border: none;
