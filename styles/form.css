@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-around; /* Distributes the stars evenly */
+    align-items: center; /* Aligns stars vertically centered */
+}
+
+.star-rating label {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 30px; /* Adjusts the size of the stars */
+    color: #ddd; /* Default star color */
+}
+
+.star-rating input[type="radio"] {
+    display: none; /* Hides the radio button */
+}
+
+/* Change star color on selection */
+.star-rating input[type="radio"]:checked ~ span {
+    color: #FFD700; /* Gold color for selected stars */
+}
+
+/* For a better hover effect */
+.star-rating label:hover ~ span {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.feature-option {
+    display: flex; /* Aligns checkbox and label in a row */
+    align-items: center; /* Vertically centers the items */
+    margin-bottom: 10px; /* Spacing between options */
+}
+
+.feature-option input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.feature-option .checkbox-square {
+    width: 20px; /* Set width for the square */
+    height: 20px; /* Set height for the square */
+    border: 2px solid #ccc; /* Border color */
+    margin-right: 10px; /* Space between checkbox and label */
+    display: inline-block; /* Make it an inline block */
+    position: relative; /* Position relative for inner check mark */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Change square color on selection */
+.feature-option input[type="checkbox"]:checked + .checkbox-square {
+    background-color: #007BFF; /* Color when checked */
+    border-color: #007BFF; /* Change border color when checked */
+}
+
+/* For a better hover effect */
+.feature-option input[type="checkbox"]:checked + .checkbox-square::after {
+    content: ""; /* Empty content */
+    position: absolute; /* Absolute position for check mark */
+    left: 4px; /* Adjust left position */
+    top: 8px; /* Adjust top position */
+    width: 6px; /* Width of check mark */
+    height: 10px; /* Height of check mark */
+    border: solid white; /* Color of the check mark */
+    border-width: 0 2px 2px 0; /* Border styling for check mark */
+    transform: rotate(45deg); /* Rotate to form a check mark */
+}
+
+/* Larger Textarea */
+textarea {
+    width: 100%; /* Full width */
+    height: 100px; /* Adjust height as needed */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+}
+

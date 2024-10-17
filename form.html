@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Product Review">
+    <meta name="author" content="Shannon Hickman WDD131">
+    <title>Product Review Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    
+    <main>
+        <form id="reviewForm" method="get" action="review.html" class="wf1">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="star-rating">
+                    <label>
+                        <input type="radio" name="rating" value="1" required>
+                        <span>☆</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2" required>
+                        <span>☆</span><span>☆</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3" required>
+                        <span>☆</span><span>☆</span><span>☆</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4" required>
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="5" required>
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="dateofinstallation">Date of Installation:</label>
+            <input type="date" id="dateofinstallation" name="dateofinstallation">
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <div>Features:</div>
+                <label class="feature-option">
+                    <input type="checkbox" name="features" value="durability">
+                    <span class="checkbox-square"></span> Durability
+                </label>
+                <label class="feature-option">
+                    <input type="checkbox" name="features" value="ease">
+                    <span class="checkbox-square"></span> Ease of Use
+                </label>
+                <label class="feature-option">
+                    <input type="checkbox" name="features" value="performance">
+                    <span class="checkbox-square"></span> Performance
+                </label>
+                <label class="feature-option">
+                    <input type="checkbox" name="features" value="design">
+                    <span class="checkbox-square"></span> Design
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="review">Written Review (Optional):</label>
+                <textarea id="review" name="review" rows="5" cols="40" placeholder="Write your review here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="userName">Your Name (Optional):</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    
+    <footer>
+        <p id="symbol-date-name">
+            &copy;<span id="currentyear"></span> Shannon Hickman - Herriman, UT
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/scripts.j
+
+
