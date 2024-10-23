@@ -26,7 +26,6 @@ const products = [
     }
 ];
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const productSelect = document.getElementById('productName');
     const placeholderOption = document.createElement('option');
@@ -44,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
-        
+
         const selectedProduct = document.getElementById('productName').value;
         const rating = document.querySelector('input[name="rating"]:checked').value;
-        const reviewText = document.getElementById('reviewText').value;
+        const reviewText = document.getElementById('review').value;
 
         localStorage.setItem('selectedProduct', selectedProduct);
         localStorage.setItem('rating', rating);
@@ -63,6 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
     document.getElementById('currentyear').textContent = currentYear;
 
-    const lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = "Last Updated: " + lastModified;
-});
+    const lastModified =
