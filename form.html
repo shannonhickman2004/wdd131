@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Product Review">
@@ -7,19 +8,19 @@
     <title>Product Review Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="styles/form.css" rel="stylesheet">
-    <script src="form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
     </header>
-    
+
     <main>
         <form id="reviewForm" method="get" action="review.html" class="wf1">
             <label for="productName">Product Name:</label>
             <select id="productName" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
-                <!-- Options will be populated by JavaScript -->
             </select>
 
             <fieldset>
@@ -74,7 +75,8 @@
 
             <fieldset>
                 <label for="review">Written Review (Optional):</label>
-                <textarea id="review" name="review" rows="5" cols="40" placeholder="Write your review here..."></textarea>
+                <textarea id="review" name="review" rows="5" cols="40"
+                    placeholder="Write your review here..."></textarea>
             </fieldset>
 
             <fieldset>
@@ -85,7 +87,7 @@
             <input type="submit" value="Post Review">
         </form>
     </main>
-    
+
     <footer>
         <p id="symbol-date-name">
             &copy;<span id="currentyear"></span> Shannon Hickman - Herriman, UT
@@ -93,5 +95,3 @@
         <p id="lastModified"></p>
     </footer>
     <script src="js/scripts.j
-
-

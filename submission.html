@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <h1>Thank you for your review!</h1>
+    <p>Your review has been successfully submitted.</p>
+
+    <div id="reviewDetails"></div>
+
+    <p id="reviewCount"></p>
+
+    <div>
+        <button onclick="window.location.href='form.html';">Go back to submit another review</button>
+    </div>
+
+    <script>
+        const product = localStorage.getItem('selectedProduct');
+        const rating = localStorage.getItem('rating');
+        const reviewText = localStorage.getItem('reviewText');
+
+        if (product && rating && reviewText) {
+            document.getElementById('reviewDetails').innerHTML = `
+                <h2>Review Summary</h2>
+                <p><strong>Product:</strong> ${product}</p>
+                <p><strong>Rating:</strong> ${rating} stars</p>
+                <p><strong>Your Review:</strong> ${reviewText}</p>
+            `;
+        }
+
+        const reviewCount = localStorage.getItem('reviewsCount');
+        if (reviewCount) {
+            document.getElementById('reviewCount').textContent = `You have submitted ${reviewCount} review(s) so far.`;
+        }
+    </script>
+</body>
+
+</html>
