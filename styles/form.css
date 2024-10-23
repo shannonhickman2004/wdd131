@@ -95,11 +95,11 @@ input[type="submit"]:hover {
 }
 
 .rating-option input[type="radio"]:checked + label {
-    color: gold;
+    color: #00ff59;
 }
 
 .stars label:hover {
-    color: gold;
+    color: #00ff59;
 }
 
 .feature-option {
