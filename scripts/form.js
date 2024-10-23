@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
-
+        
         const selectedProduct = document.getElementById('productName').value;
         const rating = document.querySelector('input[name="rating"]:checked').value;
-        const reviewText = document.getElementById('review').value;
+        const reviewText = document.getElementById('review').value; 
 
         localStorage.setItem('selectedProduct', selectedProduct);
         localStorage.setItem('rating', rating);
@@ -56,10 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
         reviewsCount++;
         localStorage.setItem('reviewsCount', reviewsCount);
 
-        window.location.href = 'submission.html';
+        window.location.href = 'submission.html'; 
     });
 
     const currentYear = new Date().getFullYear();
     document.getElementById('currentyear').textContent = currentYear;
 
-    const lastModified =
+    const lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = "Last Updated: " + lastModified;
+});
+
