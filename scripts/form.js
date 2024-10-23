@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         reviewsCount++;
         localStorage.setItem('reviewsCount', reviewsCount);
 
-        window.location.href = 'submission.html';
+        window.location.href = 'review.html';
     });
 
     const currentYear = new Date().getFullYear();
@@ -65,4 +65,3 @@ document.addEventListener('DOMContentLoaded', function() {
     const lastModified = document.lastModified;
     document.getElementById('lastModified').textContent = "Last Updated: " + lastModified;
 });
-
