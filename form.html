@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <form id="reviewForm" method="get" action="review.html" class="wf1">
+        <form id="reviewForm" method="post" action="review.html" class="wf1">
             <label for="productName">Product Name:</label>
             <select id="productName" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
@@ -28,27 +28,27 @@
 
             <fieldset>
                 <legend>Overall Rating:</legend>
-                <div class="star-rating">
-                    <label>
-                        <input type="radio" name="rating" value="1" required>
-                        <span>☆</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="rating" value="2" required>
-                        <span>☆</span><span>☆</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="rating" value="3" required>
-                        <span>☆</span><span>☆</span><span>☆</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="rating" value="4" required>
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="rating" value="5" required>
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </label>
+                <div class="radio-group">
+                    <div class="rating-option">
+                        <label for="overall-1">&star;</label>
+                        <input type="radio" id="overall-1" name="overall" value="1" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="overall-2">&star;&star;</label>
+                        <input type="radio" id="overall-2" name="overall" value="2" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="overall-3">&star;&star;&star;</label>
+                        <input type="radio" id="overall-3" name="overall" value="3" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="overall-4">&star;&star;&star;&star;</label>
+                        <input type="radio" id="overall-4" name="overall" value="4" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="overall-5">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="overall-5" name="overall" value="5" required>
+                    </div>
                 </div>
             </fieldset>
 
@@ -57,7 +57,6 @@
 
             <fieldset>
                 <legend>Which features did you find useful in the product?</legend>
-                <div>Features:</div>
                 <label class="feature-option">
                     <input type="checkbox" name="features" value="durability">
                     <span class="checkbox-square"></span> Durability

@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; 
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
@@ -55,7 +55,7 @@ legend {
 }
 
 input[type="submit"] {
-    background-color: #00ff59;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px;
@@ -63,31 +63,43 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #00ff59;
+    background-color: #333;
 }
 
-.star-rating {
+.radio-group {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.star-rating label {
-    cursor: pointer;
-    font-size: 30px;
+.stars {
+    font-size: 2rem;
     color: #ddd;
 }
 
-.star-rating input[type="radio"] {
-    display: none;
+.stars label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: default;
 }
 
-.star-rating input[type="radio"]:checked~span {
-    color: #00ff59;
+.rating-option input[type="radio"] {
+    margin-top: 5px;
+    transform: scale(1.5);
 }
 
-.star-rating label:hover~span {
-    color: #00ff59;
+.rating-option input[type="radio"]:checked + label {
+    color: gold;
+}
+
+.stars label:hover {
+    color: gold;
 }
 
 .feature-option {
@@ -110,14 +122,12 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-
-.feature-option input[type="checkbox"]:checked+.checkbox-square {
+.feature-option input[type="checkbox"]:checked + .checkbox-square {
     background-color: #00ff59;
     border-color: #00ff59;
 }
 
-
-.feature-option input[type="checkbox"]:checked+.checkbox-square::after {
+.feature-option input[type="checkbox"]:checked + .checkbox-square::after {
     content: "";
     position: absolute;
     left: 4px;
@@ -128,7 +138,6 @@ input[type="submit"]:hover {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-
 
 textarea {
     width: 100%;
@@ -151,7 +160,7 @@ textarea {
         font-size: 16px;
     }
 
-    .star-rating label {
+    .radio-group label {
         font-size: 24px;
     }
 }
