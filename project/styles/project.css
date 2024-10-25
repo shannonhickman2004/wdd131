@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #b65f2a;
+    background-color: #8a4520;
     color: #333;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ h1 {
 
 h2 {
     margin: 10px 0;
-    color: #b65f2a;
+    color: #8a4520;
     text-align: center;
 }
 
@@ -194,7 +194,7 @@ h3 {
 }
 
 footer {
-    background-color: #b65f2a;
+    background-color: #8a4520;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -209,14 +209,14 @@ footer {
 }
 
 fieldset {
-    border: 1px solid #b65f2a;
+    border: 1px solid #8a4520;
     border-radius: 8px;
     padding: 20px;
 }
 
 legend {
     font-weight: bold;
-    color: #b65f2a;
+    color: #8a4520;
 }
 
 label {
@@ -236,7 +236,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #b65f2a;
+    background-color: #8a4520;
     color: white;
     padding: 10px;
     border: none;
