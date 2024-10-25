@@ -25,6 +25,7 @@ header {
 p {
     text-align: center;
 }
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -87,21 +88,16 @@ h3 {
 #recreational {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* Creates two columns: 1/3 for header, 2/3 for paragraph */
     gap: 20px;
-    /* Optional: space between columns */
     align-items: center;
-    /* Align items vertically in the center of the row */
 }
 
 #recreational h2 {
     grid-column: 1;
-    /* Places the header in the first column */
 }
 
 #recreational p {
     grid-column: 2;
-    /* Places the paragraph in the second column */
 }
 
 
@@ -135,37 +131,47 @@ h3 {
     margin: 8px 0;
 }
 
-.hogan-container, .cabin-container, .kiva-container {
+.hogan-container,
+.cabin-container,
+.kiva-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
-.hogan, .cabin, .kiva {
+.hogan,
+.cabin,
+.kiva {
     text-align: center;
-    border: 3px solid #ddd; 
+    border: 3px solid #ddd;
     padding: 15px;
     border-radius: 4px;
 }
 
-/* Ensures the images are responsive */
-.hogan img, .cabin img, .kiva img {
+.hogan img,
+.cabin img,
+.kiva img {
     width: 100%;
     height: auto;
 }
 
-.hogan img:hover, .cabin img:hover, .kiva img:hover {
+.hogan img:hover,
+.cabin img:hover,
+.kiva img:hover {
     transform: scale(1.05);
 }
 
-/* Optional styles for headings and paragraphs inside each hogan */
-.hogan h3, .cabin h3, .kiva h3 {
+.hogan h3,
+.cabin h3,
+.kiva h3 {
     margin: 10px 0 5px;
     font-size: 1.5em;
 }
 
-.hogan p, .cabin p, .kiva p {
+.hogan p,
+.cabin p,
+.kiva p {
     margin: 0;
 }
 
@@ -200,7 +206,8 @@ footer {
     padding: 15px 0;
 }
 
-footer p, footer span {
+footer p,
+footer span {
     color: white;
 }
 
@@ -236,7 +243,6 @@ textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* Rounded corners */
 }
 
 input[type="submit"] {
@@ -247,7 +253,6 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    /* Button font size */
     transition: background-color 0.3s ease;
 }
 
