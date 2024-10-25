@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu');
     const navigation = document.querySelector('.navigation');
-    const contactForm = document.querySelector('.contact-form'); 
+    const contactForm = document.querySelector('.contact-form');
 
     menuButton.addEventListener('click', () => {
         const isOpen = navigation.classList.toggle('open');
@@ -16,23 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("lastModified").textContent =
         "Last Updated: " + lastModifiedDate.toLocaleDateString();
 
-    
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault(); 
-        console.log("Form submission prevented"); 
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-        const formData = {
-            firstName: contactForm.fname.value,
-            lastName: contactForm.lname.value,
-            phone: contactForm.phone.value,
-            email: contactForm.email.value,
-            message: contactForm.message.value,
-            checkin: contactForm.checkin.value,
-            checkout: contactForm.checkout.value,
-        };
+            const formData = {
+                firstName: contactForm.fname.value,
+                lastName: contactForm.lname.value,
+                phone: contactForm.phone.value,
+                email: contactForm.email.value,
+                message: contactForm.message.value,
+                checkin: contactForm.checkin.value,
+                checkout: contactForm.checkout.value,
+            };
 
-        localStorage.setItem('contactFormData', JSON.stringify(formData));
+            Object.entries(formData).forEach(([key, value]) => {
+                localStorage.setItem(key, value);
+            });
 
-        window.location.href = 'thanks.html';
-    });
+
+            window.location.href = 'thanks.html';
+        });
+    }
 });
