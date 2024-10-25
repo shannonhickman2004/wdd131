@@ -33,7 +33,7 @@ main {
 
 h1 {
     font-size: 2rem;
-    color: #333;
+    color: #f4f4f4;
 }
 
 h2 {
@@ -113,7 +113,7 @@ h3 {
 
 .navigation a {
     padding: 15px;
-    color: #333;
+    color: #f4f4f4;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -198,6 +198,10 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 0;
+}
+
+footer p, footer span {
+    color: white;
 }
 
 /* This is css for my contact form */
