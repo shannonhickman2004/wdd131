@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Blanding Retreat Home Page with Links to Each Page of Site in Menu">
+    <meta name="author" content="Shannon Hickman WDD131">
     <title>Blanding's Retreat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">>
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/mobileproject.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/project.js" defer></script>
@@ -13,13 +17,13 @@
 
 <body>
     <header>
-        <h1>Blanding's Retreat</h1>
-        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <h1>Recapture Retreat</h1>
+        <button id="menu" aria-label="Toggle navigation menu">☰</button> 
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="cabin.html">About</a>
-            <a href="hogan.html">About</a>
-            <a href="kiva.html">About</a>
+            <a href="cabin.html">Cabins</a>
+            <a href="hogan.html">Hogans</a>
+            <a href="kiva.html">Kivas</a>
             <a href="attractions.html">Attractions</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -28,19 +32,44 @@
     <main>
         <section id="home" class="hero">
             <h2>Welcome to Blanding's Retreat</h2>
-            <p>Escape the hustle and bustle of city life and immerse yourself in the serene beauty of Blanding, Utah. We offer unique Native American hogans and charming cabins for rent, perfect for adventure and relaxation.</p>
+            <p>Escape busy of city life and immerse yourself in the serene beauty of Blanding, Utah. We offer unique Native American hogans and rustic cabins for rent, perfect for adventure and relaxation.</p>
         </section>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/herolargetop.webp" media="(min-width: 1000px)">
+                <source srcset="images/heromediumtop.webp" media="(min-width: 500px)">
+                <img src="images/herosmalltop.webp" alt="Lanscape" width="500" height="250">
+            </picture>
+        </div>
         
-        <section id="about">
+        <section id="about">   
+            <p>Our cabins and hogans provide a one-of-a-kind lodging experience that combines comfort with cultural significance. Water source is an artesian well. Cabins have propane heater for chilly nights, also refrigerator and stove.</p>
             <h2>Your Unique Accommodations</h2>
-            <p>Our cabins and hogans provide a one-of-a-kind lodging experience that combines comfort with cultural significance. Each unit is thoughtfully designed to reflect traditional architecture while offering modern amenities.</p>
         </section>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/herolargemiddle.webp" media="(min-width: 1000px)">
+                <source srcset="images/heromediummiddle.webp" media="(min-width: 500px)">
+                <img src="images/herosmallmiddle.webp" alt="Lanscape" width="500" height="250">
+            </picture>
+        </div>
 
         <section id="recreational">
             <h2>Explore the Great Outdoors</h2>
-            <p>Blanding's Retreat is your gateway to adventure with outdoor activities like paddle boarding, hiking, and wildlife watching.</p>
+            <p>Blanding's Retreat is your gateway to adventure with outdoor activities like dark sky gazing, hiking, and exploring Ancient Native American Heritage Sites.</p>
         </section>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/herolargebottom.webp" media="(min-width: 1000px)">
+                <source srcset="images/heromediumbottom.webp" media="(min-width: 500px)">
+                <img src="images/herosmallbottom.webp" alt="Lanscape" width="500" height="250">
+            </picture>
+        </div>
     </main>
+
 
     <footer>
         <p id="symbol-date-name">

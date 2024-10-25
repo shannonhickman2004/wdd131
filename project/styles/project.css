@@ -22,19 +22,89 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2rem;
+p {
+    text-align: center;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-#menu {
-    font-size: 1.5rem;
-    border: none;
-    background: none;
+h1 {
+    font-size: 2rem;
     color: white;
-    cursor: pointer;
-    display: none;
-    /* Hidden by default, will show in mobile view */
 }
+
+h2 {
+    margin: 10px 0;
+    color: #b65f2a;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#about h2 {
+    text-align: right;
+}
+
+/* This is CSS for my index page to rotate the pictures and text home, about, recreational*/
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#home h2 {
+    grid-column: 1;
+}
+
+#home p {
+    grid-column: 2;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#about h2 {
+    grid-column: 2;
+}
+
+#about p {
+    grid-column: 1;
+}
+
+
+
+#recreational {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Creates two columns: 1/3 for header, 2/3 for paragraph */
+    gap: 20px;
+    /* Optional: space between columns */
+    align-items: center;
+    /* Align items vertically in the center of the row */
+}
+
+#recreational h2 {
+    grid-column: 1;
+    /* Places the header in the first column */
+}
+
+#recreational p {
+    grid-column: 2;
+    /* Places the paragraph in the second column */
+}
+
+
 
 .navigation {
     display: flex;
@@ -52,50 +122,54 @@ h1 {
     background-color: #EDC9AF;
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-    #menu {
-        display: block;
-    }
-
-    .navigation {
-        display: none;
-        /* Hide navigation links in mobile view only hamburger */
-        flex-direction: column;
-        /* Stack items */
-        position: absolute;
-        right: 0;
-        top: 60px;
-        background-color: #b65f2a;
-        width: 100%;
-    }
-
-    .navigation.open {
-        display: flex;
-    }
+.hero {
+    width: 100%;
 }
 
-main {
-    max-width: 1200px;
-    margin: auto;
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 8px 0;
+}
+
+.hogan-container, .cabin-container, .kiva-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
     padding: 20px;
 }
 
-.hero {
-    background-image: url('images/cabins.jpg');
-    /* Set a background image for the hero section */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px 20px;
+.hogan, .cabin, .kiva {
     text-align: center;
+    border: 3px solid #ddd; 
+    padding: 15px;
+    border-radius: 4px;
 }
 
-h2 {
-    margin: 10px 0;
-    color: #b65f2a;
+/* Ensures the images are responsive */
+.hogan img, .cabin img, .kiva img {
+    width: 100%;
+    height: auto;
 }
 
+.hogan img:hover, .cabin img:hover, .kiva img:hover {
+    transform: scale(1.05);
+}
+
+/* Optional styles for headings and paragraphs inside each hogan */
+.hogan h3, .cabin h3, .kiva h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.hogan p, .cabin p, .kiva p {
+    margin: 0;
+}
+
+/* This is css for my attractions page */
 .gallery {
     display: flex;
     flex-direction: column;
@@ -125,6 +199,8 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
+/* This is css for my contact form */
 
 .contact-form {
     display: flex;
@@ -173,4 +249,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #EDC9AF;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default, will show in mobile view */
 }

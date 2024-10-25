@@ -1,0 +1,65 @@
+/* Mobile View */
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #b65f2a;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation a {
+        padding: 15px;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+
+    .hogan-container,
+    .cabin-container,
+    .kiva-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hogan,
+    .cabin,
+    .kiva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hogan img,
+    .cabin img,
+    .kiva img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .hogan h3,
+    .hogan p,
+    .cabin h3,
+    .cabin p,
+    .kiva h3,
+    .kiva p {
+        text-align: center;
+    }
+}

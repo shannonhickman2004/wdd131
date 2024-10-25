@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blanding Retreat Hogan Page with Hogan listing and descriptions">
+    <meta name="author" content="Shannon Hickman WDD131">
     <title>Contact Us | Blanding's Retreat</title>
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/mobileproject.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Blanding's Retreat</h1>
-        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <h1>Recapture Retreat</h1>
+        <button id="menu" aria-label="Toggle navigation menu">☰</button>
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="cabin.html">Cabins</a>
+            <a href="hogan.html">Hogans</a>
+            <a href="kiva.html">Kivas</a>
             <a href="attractions.html">Attractions</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -27,24 +32,24 @@
         <section id="contact">
             <h2>Get in Touch</h2>
             <p>If you have questions or want to learn more about your visit, please reach out to us:</p>
-            <form method="get" action="thanks.html" class="contact-form">
+            <form method="post" class="contact-form">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" required></label>
-                    <label>Phone <input type="tel" name="phone" placeholder="123-555-1234"></label>
-                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label for="phone">Phone <input type="tel" id="phone" name="phone" placeholder="123-555-1234"></label>
+                    <label for="email">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Inquiry Details</legend>
-                    <label>Your Message* <textarea name="message" rows="4" required></textarea></label>
+                    <label for="message">Your Message* <textarea id="message" name="message" rows="4" required></textarea></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Booking Information</legend>
-                    <label>Preferred Check-in Date <input type="date" name="checkin" required></label>
-                    <label>Preferred Check-out Date <input type="date" name="checkout" required></label>
+                    <label for="checkin">Preferred Check-in Date <input type="date" id="checkin" name="checkin" required></label>
+                    <label for="checkout">Preferred Check-out Date <input type="date" id="checkout" name="checkout" required></label>
                 </fieldset>
 
                 <input type="submit" value="Send Inquiry">

@@ -3,15 +3,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigation = document.querySelector('.navigation');
 
     menuButton.addEventListener('click', () => {
-        navigation.classList.toggle('open'); // Toggle the 'open' class
-        menuButton.classList.toggle('open'); // Optional: Change button state
+        const isOpen = navigation.classList.toggle('open');
+        menuButton.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', isOpen);
     });
 
-    // Set current year in footer
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").textContent = currentYear;
 
-    // Set last modified date in footer
-    const lastModified = document.lastModified;
-    document.getElementById("lastModified").textContent = "Last Updated: " + lastModified;
+    const lastModifiedDate = new Date(document.lastModified);
+    document.getElementById("lastModified").textContent =
+        "Last Updated: " + lastModifiedDate.toLocaleDateString();
+
+    contactForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevents form from submitting the usual way
+
+
+        const formData = {
+            firstName: contactForm.fname.value,
+            lastName: contactForm.lname.value,
+            phone: contactForm.phone.value,
+            email: contactForm.email.value,
+            message: contactForm.message.value,
+            checkin: contactForm.checkin.value,
+            checkout: contactForm.checkout.value,
+        };
+
+        localStorage.setItem('contactFormData', JSON.stringify(formData));
+
+
+        window.location.href = 'thanks.html';
+    });
 });
+
+
