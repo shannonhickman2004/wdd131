@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #b65f2a;
-    color: black;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,7 @@ main {
 
 h1 {
     font-size: 2rem;
-    color: black;
+    color: #333;
 }
 
 h2 {
@@ -113,7 +113,7 @@ h3 {
 
 .navigation a {
     padding: 15px;
-    color: black;
+    color: #333;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
